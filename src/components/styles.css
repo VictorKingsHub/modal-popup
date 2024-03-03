@@ -1,0 +1,70 @@
+:root{
+    --body_color: #ffffff;
+    --modal_background_color: orangered;
+    --button_color: teal;
+    --text_color: #333333;
+    --small_font: small;
+    --large_font: large;
+    --larger_font: larger;
+    --x_large_font: x-large;
+    --white_text: #ffffff;
+    --dark_text: #222222;
+    --bold_font: 700;
+    --light_font: 500;
+}
+
+body{
+    background-color: var(--body_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.modal_container{
+    width: 90vw;
+    background-color: orangered;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+button{
+    background-color: var(--button_color);
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: var(--large_font);
+    margin-bottom: 1rem;
+    color: var(--white_text);
+    border: none;
+    cursor: pointer;
+}
+.header, .body, .footer{
+    padding: 2rem .5rem;
+    font-size: var(--larger_font);
+    font-weight: var(--bold_font);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: inherit;
+    background-color: #333333;
+    color: var(--white_text);
+}
+
+.close{
+    color: #ffffff;
+    position: fixed;
+    right: 150px;
+    cursor: pointer;
+}
+.body{
+    background-color: var(--body_color);
+    color: var(--dark_text);
+}
